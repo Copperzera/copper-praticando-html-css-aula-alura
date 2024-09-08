@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --branco-princial: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: 'Inter', sans-serif;
+    --botao-azul-efeito: #86b9f7;
+}
+
+main {
+    font-family: var(--fonte-principal);
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-princial);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url(assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    padding: 1em;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.container__botao {
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    margin: 1em;
+    text-align: center;
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-princial);
+    text-decoration: none; /* Tira o Underline dos Links */
+    display:block;
+    margin-bottom: 1em;
+}
+.botao_secundario {
+    text-align: center;
+    font-weight: 600;
+    background-color: transparent;
+    border: 2px solid var(--branco-princial);
+}
+
+.container__observacao {
+    font-family: var(--fonte-principal);
+    text-align: center;
+    color: var(--cinza-secundario);
+    font-size: 16px;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color:var(--branco-princial);
+    font-family: var(--fonte-principal);
+    margin-bottom: .1em;
+}
+
+.descricao__texto {
+    font-weight: 700;
+    color:var(--cinza-secundario);
+    font-family: var(--fonte-principal);
+    margin-bottom: .5em; 
+    font-size: 16px;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 5%;
+ }
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /* Tira as Bolinhas da Lista */
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-princial);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-princial);
+}
+
+.rodape {
+    text-align: center;
+    font-family: var(--fonte-principal);
+    margin: 7em 3em;
+    font-size: 16px;
+}
+
+.rodape__lista {
+    justify-content: center;
+    margin-top: 1em;
+    display: flex;
+    list-style-type: none;
+}
+
+.lista__link a{
+    color:var(--branco-princial);
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color:var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.lista__link a:hover{
+    color:var(--botao-azul);
+}
+
+.lista__link a:active{ 
+    color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color:black;
+    font-weight: 600;
+ }
